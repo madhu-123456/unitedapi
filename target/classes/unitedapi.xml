@@ -132,4 +132,7 @@ output application/json
         </ee:transform>
 		<flow-ref doc:name="unitedflightsbydestinationFlow" doc:id="77dede66-197a-40b1-84bd-95c7ba1841a0" name="unitedflightsbydestinationFlow"/>
     </flow>
+    <flow name="get:\unitedflightsbydestination:unitedapi-config">
+		<logger level="INFO" doc:name="Logger" doc:id="a778b4ba-44cd-4baf-acdd-0cde0fe2acf1" />
+    </flow>
 </mule>
