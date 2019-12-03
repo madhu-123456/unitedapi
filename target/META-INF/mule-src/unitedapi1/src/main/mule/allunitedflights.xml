@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="55ce7703-c4e9-4448-8d24-d4de90f57c27" >
+		<http:request-connection host="mu.mulesoft-training.com" port="80" />
+	</http:request-config>
+	<flow name="allunitedflightsFlow" doc:id="74fd4d2f-d088-49f7-852e-bb9991432349" >
+		<logger level="INFO" doc:name="Logger" doc:id="986117ea-8091-4eae-a4eb-ae6d967fba37" message="allunitedflightsflow.................."/>
+		<http:request method="GET" doc:name="Request" doc:id="9240752b-bc81-4c3a-b4d5-c1132be50250" config-ref="HTTP_Request_configuration" path="/essentials/united/flights"/>
+		<logger level="INFO" doc:name="Logger" doc:id="29534a19-334d-4580-ab92-07506f1f98d5" message="final respnse............"/>
+	</flow>
+</mule>

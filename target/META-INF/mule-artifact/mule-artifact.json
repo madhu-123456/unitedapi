@@ -1,0 +1,32 @@
+{
+  "configs": [
+    "allunitedflights.xml",
+    "unitedflightsbydestination.xml",
+    "unitedapi.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:unitedapi1:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.2.1",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "allunitedflights.xml",
+        "api/examples/listAllUnitedFlights-get-response.json",
+        "api/examples/unitedFlightsByDestination-get-response.json",
+        "api/examples/unitedFlightsByDestination-qa-get-response.json",
+        "api/unitedapi.raml",
+        "log4j2.xml",
+        "unitedapi.xml",
+        "unitedflightsbydestination.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
